@@ -16,7 +16,7 @@ public class Main {
         File statusFile = new File("state.txt");
         List<String> status;
         if(statusFile.exists()) {
-            status = Files.readAllLines(new File("state.txt").toPath());
+            status = Files.readAllLines(statusFile.toPath());
         } else {
             status = Collections.emptyList();
         }
